@@ -15,3 +15,25 @@ function baidu_map(){
 	map.setCurrentCity("北京");
 	map.addOverlay(marker);
 }
+
+function google_map(){
+	var latlng=new google.maps.LatLng(39.915, 116.404);
+	var myOptions={
+		zoom: 15,
+		center: latlng,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+
+	var map=new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+}
+
+function soso_map(){
+	var latlng=new soso.maps.LatLng(39.915, 116.404);
+	var myOptions={
+		zoom: 10,
+		center: latlng,
+		mapTypeId: soso.maps.MapTypeId.ROADMAP
+	}
+	
+	var map=new soso.maps.Map(document.getElementById("map_canvas"), myOptions);
+}
