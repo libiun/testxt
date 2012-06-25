@@ -28,6 +28,7 @@ function google_map(){
 }
 
 function soso_map(){
+
 	var latlng=new soso.maps.LatLng(39.915, 116.404);
 	var myOptions={
 		zoom: 10,
@@ -36,4 +37,8 @@ function soso_map(){
 	}
 	
 	var map=new soso.maps.Map(document.getElementById("map_canvas"), myOptions);
+}
+
+function load_html(){
+	$("#content").load("./parts/first.html");
 }
