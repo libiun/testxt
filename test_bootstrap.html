@@ -3,14 +3,79 @@
 <head>
 	<title>twitter bootstrap study</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Framework css -->
-	
-			
-	<!-- javascript -->
-	<script src="./js/jquery172.js"></script>
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/bootstrap-responsive.css">
 </head>
 <body>
-	
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span2">
+				<a href="#">Abcd</a><br/>
+				<a href="#" class="btn"><i class="icon-search"></i>  Abcd</a><br/>
+				<a href="#" class="btn btn-primary">Abcd</a><br/>
+				<a class="btn btn-small" href="#"><i class="icon-star"></i></a>			
+			</div>
+			<div class="span10">
+				<table class="table table-striped table-condensed table-bordered table-hover">
+					<thead>
+						<tr>
+						  <th>#</th>
+						  <th>First Name</th>
+						  <th>Last Name</th>
+						  <th>Username</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="success">
+						  <td>1</td>
+						  <td>Mark</td>
+						  <td>Otto</td>
+						  <td>@mdo</td>
+						</tr>
+						<tr class="error">
+						  <td>2</td>
+						  <td>Jacob</td>
+						  <td>Thornton</td>
+						  <td>@fat</td>
+						</tr>
+						<tr>
+						  <td>3</td>
+						  <td>Larry</td>
+						  <td>the Bird</td>
+						  <td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+				<form>
+					<legend>捐赠者信息添加</legend>
+					<label>姓名</label><input type="text" placeholder="name of man..."/>
+					<span class="help-block">Example block-level help text here.</span>
+					<label class="checkbox">
+						<input type="checkbox"> Check me out
+					</label>
+					<input type="date" />
+					<button type="submit" class="btn">Submit</button>
+				</form>
+				<form class="form-search">
+					<input type="text" class="input-medium search-query">
+					<button type="submit" class="btn">Search</button>
+				</form>
+				<form class="form-inline">
+					<input type="text" class="input-small" placeholder="Email">
+					<input type="password" class="input-small" placeholder="Password">
+					<label class="checkbox">
+						<input type="checkbox"> Remember me
+					</label>
+					<button type="submit" class="btn">Sign in</button>
+				</form>
+			<div>
+		</div>
+	</div>
+
+	<!-- javascript -->
+	<script src="./js/jquery172.js"></script>
+	<script src="./js/bootstrap.js"></script>
 </body>
 </html>
