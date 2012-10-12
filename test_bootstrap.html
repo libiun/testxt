@@ -15,7 +15,7 @@
 				<a href="#">Abcd</a><br/>
 				<a href="#" class="btn"><i class="icon-search"></i>  Abcd</a><br/>
 				<a href="#" class="btn btn-primary">Abcd</a><br/>
-				<a class="btn btn-small" href="#"><i class="icon-star"></i></a>			
+				<a class="btn btn-small" href="#"><i class="icon-star"></i></a><br>
 			</div>
 			<div class="span10">
 				<table class="table table-striped table-condensed table-bordered table-hover">
@@ -70,12 +70,30 @@
 					</label>
 					<button type="submit" class="btn">Sign in</button>
 				</form>
-			<div>
+				
+				<div class="dropdown pull-right">
+				    <!-- Link or button to toggle dropdown -->
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown trigger
+					  <b class="caret"></b></a>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+						<li><a tabindex="-1" href="#">Action</a></li>
+						<li><a tabindex="-1" href="#">Another action</a></li>
+						<li><a tabindex="-1" href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a tabindex="-1" href="#">Separated link</a></li>
+					 </ul>
+				</div>
+			</div>
 		</div>
 	</div>
 
 	<!-- javascript -->
 	<script src="./js/jquery172.js"></script>
 	<script src="./js/bootstrap.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".dropdown-toggle").dropdown();
+		});
+	</script>
 </body>
 </html>
