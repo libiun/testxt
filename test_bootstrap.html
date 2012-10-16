@@ -48,33 +48,58 @@
 						</tr>
 					</tbody>
 				</table>
-				<form>
-					<legend>捐赠者信息添加</legend>
-					<label>姓名</label><input type="text" placeholder="name of man..."/>
-					<span class="help-block">Example block-level help text here.</span>
-					<label class="checkbox">
-						<input type="checkbox"> Check me out
-					</label>
-					<input type="date" />
-					<button type="submit" class="btn">Submit</button>
-				</form>
-				<form class="form-search">
-					<input type="text" class="input-medium search-query">
-					<button type="submit" class="btn">Search</button>
-				</form>
-				<form class="form-inline">
-					<input type="text" class="input-small" placeholder="Email">
-					<input type="password" class="input-small" placeholder="Password">
-					<label class="checkbox">
-						<input type="checkbox"> Remember me
-					</label>
-					<button type="submit" class="btn">Sign in</button>
-				</form>
 				
-				<div class="dropdown pull-right">
+				<form class="form-search">
+					<div class="input-append">
+						<input type="text" name="seach-word"/>
+						<button class="btn" type="submit">Search</button>
+					</div>
+				</form>
+
+				<form class="form-inline">
+					<input type="text" class="input-large">
+					<input type="text" class="input-large">
+					<label class="checkbox"><input type="checkbox">Remember Me</label>
+					<button type="submit" class="btn btn-success">搜索</button>
+				</form>
+
+				<form class="form-horizontal">
+					<div class="control-group">
+						<label class="control-label">姓名</label>
+						<div class="controls">
+							<div class="input-prepend">
+								<button class="btn" type="button"><i class="icon-user"></i></button>
+								<input type="text" name="truename" placeholder="姓名"/>
+							</div>
+							<span class="help-inline">Please input your username</span>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">密码</label>
+						<div class="controls">
+							<div class="input-prepend">
+								<button class="btn" type="button"><i class="icon-lock"></i></button>
+								<input type="password" name="password" placeholder="your password"/>
+							</div>
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<label class="checkbox"><input type="checkbox"> Remember me</label>
+							<input type="submit" class="btn" />
+						</div>
+					</div>
+					<div class="form-actions">
+						<button type="submit" class="btn btn-primary">Add</button>
+						<button type="reset" class="btn">Reset</button>
+					</div>
+				</form>			
+				
+				<div class="dropdown pull-left">
 				    <!-- Link or button to toggle dropdown -->
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown trigger
-					  <b class="caret"></b></a>
+					  <b class="caret"></b>
+					</a>
 					<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
 						<li><a tabindex="-1" href="#">Action</a></li>
 						<li><a tabindex="-1" href="#">Another action</a></li>
