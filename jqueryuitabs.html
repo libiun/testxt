@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>了解jquery ui的原理</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.1/themes/flick/jquery-ui.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+</head>
+<body>
+	<div id="tabs">
+	    <ul>
+	        <li><a href="#tabs-1">捐赠人列表</a></li>
+	        <li><a href="#tabs-2">添加捐赠人</a></li>
+	        <li><a href="#tabs-3">修改数据</a></li>
+	        <li><a href="README.md">Ajax选项卡</a></li>
+	    </ul>
+	    <div id="tabs-1">
+	    	<p>tabs 1 tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1
+	    	</p>
+	    </div>
+	    <div id="tabs-2">
+	       	<p>tabs 2 tabs 2tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1</p> 
+	       	<p>
+	       		<button id="enable">Enable!</button>
+	       		<button id="disable">Disable!</button>
+	       		<button id="select2">Select 2!</button>
+	       	</p>
+	    </div>
+	    <div id="tabs-3">
+	        <p>tabs 3 tabs 3 tabs 3tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1tabs 1
+	        </p> 
+	    </div>
+	</div>
+	<div>
+		<button id="addTab">Add new Tab! add("new tab's content", "new tab's label")</button>
+	</div>
+	<select id="choosefile">
+		<option>parts-first.html</option>
+		<option>right_1.html</option>
+	</select>
+	<div id="message"></div>
+
+	<script type="text/javascript">
+		$(function(){
+			var tabs = $("#tabs").tabs({
+				//Options
+				disabled: [0],
+				collapsible: true,
+				event: "click",
+				active: false,
+				fx: {opacity: "toggle", duration: "normal"},
+				//Events
+				select: function(event, tab){
+					$("#message").append("你选择的选项卡index是" + tab.index + "<br/>");
+				},
+			});
+			//Methods
+			$("#enable").click(function(){
+				//selector.tabs(方法名，方法参数)
+				tabs.tabs("enable", 0);
+			});
+			$("#disable").click(function(){
+				tabs.tabs("disable", 0);
+			});
+			$("#select2").click(function(){
+				tabs.tabs("select", 2);
+			});
+			$("#addTab").click(function(){
+				tabs.tabs("add", "#message", "message");
+			});
+			$("#choosefile").change(function(){
+				this.selectedIndex == 0 ? loadFile1() : loadFile2();
+
+				function loadFile1(){
+					//先设定index=3的选项卡内容，而后刷新该卡
+					tabs.tabs("url", 3, "./parts/first.html").tabs("load", 3);
+				}
+				function loadFile2(){
+					//先设定index=3的选项卡内容，而后刷新该卡
+					tabs.tabs("url", 3, "right_1.html").tabs("load", 3);
+				}
+			});
+		});
+	</script>
+</body>
+</html>
