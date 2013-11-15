@@ -1,0 +1,52 @@
+body#home{
+    color: #4e443c;
+    background: #f0efe7 url(/git/body.jpg);
+}
+
+.inner{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    overflow: visible;
+}
+
+#logo-and-menu #menu{
+    position: absolute;
+    z-index: 1000;
+    right: 0;
+    bottom: 10px;
+    width: auto;
+    padding-left: 32px;
+    background-color: #fcfcfa !important;
+    border: solid 1px #ceccc5;
+}
+
+#search-tabs-slideshow {
+    background: transparent url(/git/searchtabs.png) top right repeat;
+}
+
+#search-tabs-slideshow #search-tabs{
+    width: 675px;
+    float: left;
+}
+
+#search-tabs-slideshow #slideshow{
+    width: 260px;
+    float: right;
+}
+
+#datalist-service-icons #datalist{
+    width: 675px;
+    float: left;
+}
+
+#datalist-service-icons #service-icons{
+    width: 260px;
+    float: right;
+}
+
+#bottom-space .space{
+    width:300px;
+    float: left;
+    text-align: center;
+}
