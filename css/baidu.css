@@ -1,0 +1,14 @@
+#left_menu_content {
+    height: 100%;
+    width: 42px;
+    overflow: hidden;
+    background: #f9f9f9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.leftNavOn{
+	width: 144px !important;
+}
