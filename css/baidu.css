@@ -7,6 +7,14 @@
     top: 0;
     left: 0;
     z-index: 999;
+    box-shadow: -1px 0 10px rgba(0,0,0,.2) inset;
+    -moz-box-shadow: -1px 0 10px rgba(0,0,0,.2) inset;
+    -webkit-box-shadow: -1px 0 10px rgba(0,0,0,.2) inset;
+    -ms-box-shadow: -1px 0 10px rgba(0,0,0,.2) inset;
+    transition: width .4s;
+    -webkit-transition: width .4s;
+    -mos-transition: width .4s;
+    -ms-transition: width .4s;
 }
 
 .leftNavOn{
