@@ -1,0 +1,431 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>贵州新气象服务有限公司</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/li-scroller.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/jquery.li-scroller.1.0.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $(".scroll").click(function(event) {
+        event.preventDefault();
+        $('html,body').animate({
+          scrollTop: $(this.hash).offset().top
+        }, 1200);
+      });
+
+      $('.myscroll').myScroll({
+        speed: 40, //数值越大，速度越慢
+        rowHeight: 26 //li的高度
+      });
+      $("ul#ticker01").liScroll({});
+    });
+  </script>
+  <link href="css/style.css" rel='stylesheet' type='text/css' />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="application/x-javascript">
+    addEventListener("load", function() {
+      setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+      window.scrollTo(0, 1);
+    }
+  </script>
+  <!-- <link href='http://fonts.useso.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'> -->
+  <link rel="stylesheet" type="text/css" href="css/font.css">
+  </script>
+</head>
+
+<body>
+  <!-- div.header begin -->
+  <div class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo5.png" alt="Nova"></a>
+      </div>
+      <div class="menu">
+        <a class="toggleMenu" href="#"><img src="images/nav_icon.png" alt="" /> </a>
+        <ul class="nav" id="nav">
+          <li class="current"><a href="index.html">首页</a></li>
+          <li><a href="cxxm.html">企业概况</a></li>
+          <li><a href="#production">服务产品</a></li>
+          <li><a href="xmjy.html">创客项目</a></li>
+          <li><a href="services3.html">在线交流</a></li>
+          <li><a href="about.html">联系我们</a></li>
+          <div class="clear"></div>
+        </ul>
+        <script type="text/javascript" src="js/responsive-nav.js"></script>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+  <!-- div.header end -->
+  <!-- div.banner begin -->
+  <div class="banner text-center">
+    <div class="container">
+      <div class="banner-info">
+        <!-- div.row beagin -->
+
+        <div class="row" style="margin-top: -60px;">
+          <!-- 第一行 start-->
+
+          <div class="col-md-8">
+            <div class="login-panel panel panel-default">
+              <div class="panel-heading" style="float: left; border-color:white; background-color:white;">
+                <h3 class="panel-title">预警信息</h3>
+              </div>
+              <div class="panel-body" style="padding: 6px">
+                <ul id="ticker01">
+                  <li>12月1日，<a href="#">寒潮预警，请做好防护工作。</a></li>
+                  <li>12月2日，<a href="#">橙色雾霾预警。</a></li>
+                  <li>1月1日，<a href="#">大雾预警！</a></li>
+                  <li>1月3日，<a href="#">降温寒潮预警。</a></li>
+                  <li>1月5日，<a href="#">大雾寒潮预警。</a></li>
+                  <li>1月8日，<a href="#">暴雨预警，请做好防护工作。</a></li>
+                  <li>1月13日，<a href="#">寒潮预警。</a></li>
+                  <li>1月14日，<a href="#">寒潮预警，请做好防护工作。</a></li>
+                  <li>1月17日，<a href="#">寒潮预警。</a></li>
+                  <li>1月19日，<a href="#">寒潮预警，请做好防护工作。</a></li>
+                  <li>1月22日，<a href="#">寒潮预警。</a></li>
+                  <li>1月24日，<a href="#">寒潮预警。</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="input-group input-group-lg">
+              <input type="text" class="form-control" placeholder="输入城镇名  查天气...">
+              <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Search!</button>
+                    </span>
+            </div>
+            <!-- /input-group -->
+          </div>
+
+          <!-- 第一行 end -->
+          <!-- 第二行 start -->
+
+          <div class="col-md-8 ">
+
+            <!-- gis 图片 -->
+
+            <div class="login-panel panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title" style="float: left;">今日天气</h3>
+                <h3 class="panel-title" style="text-align: right;">2017年5月12日 08:46:10</h3>
+              </div>
+              <div class="panel-body" style="padding: 0px">
+                <img src="images/gz2123.png" />
+                <!-- 748*518 px -->
+              </div>
+              <!-- <div class="panel-footer"></div> -->
+            </div>
+
+          </div>
+          <div class="col-md-4">
+
+            <div class="login-panel panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">用户登陆</h3>
+              </div>
+              <div class="panel-body">
+                <form role="form" action="#">
+                  <fieldset>
+                    <div class="form-group">
+                      <input class="form-control" placeholder="请输入用户名" name="username" id="username"
+                      type="text" autofocus="" autocomplete="off" background-repeat: no-repeat;
+                      background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto; >
+                    </div>
+                   <div class="form-group">
+                       <input class="form-control " placeholder="请输入密码 " name="password " id="password " type="password " autocomplete="off
+                        " background-repeat: no-repeat;
+                        background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;>
+                    </div>
+
+                    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                      <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-success"><a href="#">登录</a></button>
+                      </div>
+                      <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-success"><a href="register.html">注册</a></button>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+              <!-- <div class="panel-footer"></div> -->
+            </div>
+
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">通知公告</h3>
+              </div>
+              <div class="panel-body">
+                <div class="bs-example">
+                  <ul>
+                    <li><a href="#">去旧迎新送别候年，祝您身体健康。</a></li>
+                    <li><a href="#">欢天喜地迎接鸡年，祝您心想事成。</a></li>
+                    <li><a href="#">Happy new year！</a></li>
+                    <li><a href="#">做好新年工作安排。</a></li>
+                    <li><a href="#">Nulla volutpat aliquam velit</a></li>
+                    <li><a href="#">Faucibus porta lacus fringilla vel</a></li>
+                    <li><a href="#">去旧迎新送别候年，祝您身体健康。</a></li>
+                    <li><a href="#">欢天喜地迎接鸡年，祝您心想事成。</a></li>
+                    <li><a href="#">Happy new year！</a></li>
+                    <li><a href="#">去旧迎新送别候年，祝您身体健康。</a></li>
+                    <li><a href="#">欢天喜地迎接鸡年，祝您心想事成。</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- <div class="panel-footer"></div> -->
+            </div>
+
+          </div>
+
+        </div>
+        <!-- 第二行 end -->
+        <!-- div.row end -->
+      </div>
+      <label class="page-scroll"><a class="banner-btn class scroll" href="#feature"><i class="fa fa-angle-double-down fa-4x"></i></a></label>
+    </div>
+  </div>
+  </div>
+  <!-- div.banner end -->
+  <!-- div.main begin -->
+  <div class="main">
+    <div class="content_white">
+      <h2 id="production">气象服务产品</h2>
+      <p>我们提供全媒体的气象服务产品</p>
+    </div>
+    <div class="featured_content" id="feature">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <!-- isotope filters start -->
+            <div class="filters text-center">
+
+            </div>
+            <!-- isotope filters end -->
+            <!-- portfolio items start -->
+            <div class="isotope-container row grid-space-20" style="position: relative; height: 1186.59px;">
+              <div class="col-sm-6 col-md-3 isotope-item app-development" style="position: absolute; left: 0px; top: 0px;">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <img src="images/zhqx.jpg" alt="">
+
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-1">智慧气象</a>
+                </div>
+                <!-- Modal -->
+
+                <!-- Modal end -->
+              </div>
+              <div class="col-sm-6 col-md-3 isotope-item app-development" style="position: absolute; left: 292px; top: 0px;">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <img src="images/tffb.jpg" alt="">
+
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-2">沿海台风发布</a>
+                </div>
+                <!-- Modal -->
+
+                <!-- Modal end -->
+              </div>
+              <div class="col-sm-6 col-md-3 isotope-item app-development" style="position: absolute; left: 585px; top: 0px;">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <img src="images/jsfb.jpg" alt="">
+
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-3">贵州降水发布</a>
+                </div>
+                <!-- Modal -->
+
+                <!-- Modal end -->
+              </div>
+              <div class="col-sm-6 col-md-3 isotope-item app-development" style="position: absolute; left: 877px; top: 0px;">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <img src="images/hjfb.jpg" alt="">
+
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-4">贵州环境发布</a>
+                </div>
+                <!-- Modal -->
+
+                <!-- Modal end -->
+              </div>
+              <div class="col-sm-6 col-md-3 isotope-item web-design" style="position: absolute; left: 0px; top: 296px;">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <img src="images/zyqxxx.jpg" alt="">
+
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-5">重要气象信息</a>
+                </div>
+                <!-- Modal -->
+
+                <!-- Modal end -->
+              </div>
+              <div class="col-sm-6 col-md-3 isotope-item web-design" style="position: absolute; left: 292px; top: 296px;">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <img src="images/qxztbg.jpg" alt="">
+
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-6">气象专题报告</a>
+                </div>
+                <!-- Modal -->
+
+                <!-- Modal end -->
+              </div>
+              <div class="col-sm-6 col-md-3 isotope-item web-design" style="position: absolute; left: 585px; top: 296px;">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <img src="images/skyb.jpg" alt="">
+
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-7">水库预报</a>
+                </div>
+                <!-- Modal -->
+
+                <!-- Modal end -->
+              </div>
+              <div class="col-sm-6 col-md-3 isotope-item web-design" style="position: absolute; left: 877px; top: 296px;">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <img src="images/dsdq.jpg" alt="">
+
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-8">短时短期预报</a>
+                </div>
+                <!-- Modal -->
+
+                <!-- Modal end -->
+              </div>
+              <div class="col-sm-6 col-md-3 isotope-item web-design" style="position: absolute; left: 0px; top: 593px;">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <img src="images/zqyb.jpg" alt="">
+
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-9">中长期天气预报</a>
+                </div>
+                <!-- Modal -->
+
+                <!-- Modal end -->
+              </div>
+              <div class="col-sm-6 col-md-3 isotope-item web-design" style="position: absolute; left: 292px; top: 593px;">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <img src="images/skzl.jpg" alt="">
+
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-10">实况资料</a>
+                </div>
+                <!-- Modal -->
+
+                <!-- Modal end -->
+              </div>
+              <div class="col-sm-6 col-md-3 isotope-item web-design" style="position: absolute; left: 585px; top: 593px;">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <img src="images/lyjdyb.jpg" alt="">
+
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-11">旅游景点预报</a>
+                </div>
+                <!-- Modal -->
+
+                <!-- Modal end -->
+              </div>
+              <div class="col-sm-6 col-md-3 isotope-item web-design" style="position: absolute; left: 877px; top: 593px;">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <img src="images/wxyt.jpg" alt="">
+
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-12">卫星云图</a>
+                </div>
+                <!-- Modal -->
+
+                <!-- Modal end -->
+              </div>
+              <div class="col-sm-6 col-md-3 isotope-item web-design" style="position: absolute; left: 0px; top: 889px;">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <img src="images/ycyb.jpg" alt="">
+
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-13">渔场预报</a>
+                </div>
+                <!-- Modal -->
+
+                <!-- Modal end -->
+              </div>
+              <div class="col-sm-6 col-md-3 isotope-item web-design" style="position: absolute; left: 292px; top: 889px;">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <img src="images/gsgl.jpg" alt="">
+
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-14">高速公路天气预报</a>
+                </div>
+                <!-- Modal -->
+
+                <!-- Modal end -->
+              </div>
+              <div class="col-sm-6 col-md-3 isotope-item web-design" style="position: absolute; left: 585px; top: 889px;">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <img src="images/gktqyb.jpg" alt="">
+
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-15">港口天气预报</a>
+                </div>
+                <!-- Modal -->
+
+                <!-- Modal end -->
+              </div>
+              <div class="col-sm-6 col-md-3 isotope-item web-design" style="position: absolute; left: 877px; top: 889px;">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <img src="images/dlqx.jpg" alt="">
+
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-16">电力气象预报</a>
+                </div>
+                <!-- Modal -->
+
+                <!-- Modal end -->
+              </div>
+            </div>
+            <!-- portfolio items end -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer_bottom">
+        <div class="copy">
+          <p>Copyright &copy; 2017.贵州新气象服务有限公司版权所有.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- div.main begin -->
+</body>
+
+</html>
