@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>backbone single page</title>
+    <style type="text/css">
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 300px;
+        }
+
+        ul li {
+            margin: 5px 0px;
+        }
+
+        ul .lh {
+            border-bottom: solid 1px red;
+            background-color: #eee;
+            height: 23px;
+            list-style: 23px;
+        }
+
+        ul .lc {
+            border-bottom: dashed 1px #ccc;
+            height: 23px;
+            line-height: 23px;
+        }
+
+        ul li span {
+            padding-left: 10px;
+            width: 80px;
+            float: left;
+        }
+    </style>
+    <!-- 引入必备的jquery underscore backbone库 -->
+    <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+    <script src="bower_components/underscore/underscore.js" charset="utf-8"></script>
+    <script src="bower_components/backbone/backbone.js" charset="utf-8"></script>
+    <script src="backbone.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+    <ul id="ulshowstus">
+        <li class="lh">
+            <span>编号</span>
+            <span>姓名</span>
+            <span>分数</span>
+        </li>
+    </ul>
+    <br>
+    <ul>
+        <li>编号：<input id="txtCode" type="text" /></li>
+        <li>姓名：<input id="txtName" type="text" /></li>
+        <li>分数：<input id="txtScore" type="text" /></li>
+        <li><input id="btnSubmit" type="button" value="提交" /></li>
+    </ul>
+    <!-- 模板 -->
+    <script type="text/template" id="stus-tpl">
+        <li class="lc">
+            <span><%= Code %></span>
+            <span><%= Name %></span>
+            <span><%= Score %></span>
+        </li>
+    </script>
+</body>
+<!-- backbone 模型，视图，事件代码从js引入 -->
+
+</html>

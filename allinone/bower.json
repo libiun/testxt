@@ -1,0 +1,21 @@
+{
+  "name": "allinone",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "libiun <libiun@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/libiun/testxt",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "backbone": "^1.3.3",
+    "jquery": "^3.2.1"
+  }
+}

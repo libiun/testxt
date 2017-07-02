@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/vue.js"></script>
+    <script src="js/vue-resource.js"></script>
+</head>
+
+<body>
+    <!-- hello example -->
+    <div id="demo">
+        <span :title="titletime">{{message}}</span><br>
+        <input type="text" v-model="message">
+    </div>
+    <!-- 计算属性值 -->
+    <div id="didi">
+        <input type="text" v-model="didi" />
+        <input type="text" v-model="family" />
+        <br> didi = {{didi}}, family = {{family}}, didifamily = {{didifamily}}, didifamilybymethods = {{didifamilybymethods()}}
+    </div>
+    <!-- 表单控件绑定 -->
+    <div id="formbind">
+        <input type="checkbox" id="flash" value="快车" v-model="bizlines">
+        <label for="flash">快车</label>
+        <input type="checkbox" id="premium" value="专车" v-model="bizlines">
+        <label for="premium">专车</label>
+        <input type="checkbox" id="bus" value="小巴" v-model="bizlines">
+        <label for="bus">小巴</label>
+        <br>
+        <span>过滤器需要在filters里自定义: {{ message | capitalize}}</span>
+        <span>checklines: {{bizlines}}</span>
+        <firstcomponent></firstcomponent>
+    </div>
+    <!-- 组件 -->
+    <div id="componentexample">
+        <firstcomponent></firstcomponent>
+        <mycom></mycom>
+    </div>
+    <script type="text/javascript">
+        //hello example
+        var app1 = new Vue({
+            el: '#demo',
+            data: {
+                message: "hello world.",
+                // titletime: new Date()
+            },
+            computed: {
+              titletime (){
+                return new Date() + "add!"
+              }
+            }
+        });
+        //计算属性值
+        var app2 = new Vue({
+            el: "#didi",
+            data: {
+                didi: "滴滴",
+                family: "家庭"
+            },
+            computed: {
+                didifamily () {
+                    return this.didi + this.family;
+                }
+            },
+            methods: {
+                didifamilybymethods () {
+                    return this.didi + this.family;
+                }
+            }
+        });
+        // 全局注册组件，必须在调用的vue对象之前注册
+        Vue.component("firstcomponent", {
+            template: "<div>firstcomponent inner</div>"
+        });
+        //表单控件绑定
+        var app3 = new Vue({
+            el: "#formbind",
+            data: {
+                bizlines: [
+
+                ],
+                message: "hellos"
+            },
+            filters: {
+                capitalize (value) {
+                    // if(!value) return '';
+                    // value = value.toString();
+                    return value.charAt(0).toUpperCase() + value.slice(1);
+                },
+                json: function(value) {
+                    if (!value) return '';
+                    // 数组如何变成json
+                    return value.toString();
+                }
+            }
+        });
+
+        // 局部注册组件
+        var child = {
+            template: "<div>jubu component</div>"
+        };
+        var app4 = new Vue({
+            el: "#componentexample",
+            components: {
+                "mycom": child
+            }
+        });
+    </script>
+</body>
+
+</html>
