@@ -7,5 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "libiun",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jQuery": "^1.7.4",
+    "jsdom": "^11.1.0"
+  }
 }
